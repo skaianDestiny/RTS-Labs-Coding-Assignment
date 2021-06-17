@@ -15,5 +15,5 @@ try:
 			below += 1
 
 	print("Above: " + str(above) + "\nBelow: " + str(below))
-except:
+except TypeError:
 	print("Not a valid number")
