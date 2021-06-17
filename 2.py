@@ -16,5 +16,5 @@ try:
 	print(s1 + "\n" + s2)
 
 	print("Rotated by " + str(rotate) + ": " + s1 + s2)
-except:
+except TypeError:
 	print("Not a valid number")
