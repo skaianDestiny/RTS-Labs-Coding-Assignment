@@ -3,15 +3,18 @@
 string = "MyString"
 print("Original: " + string)
 
-rotate = input("Enter number to rotate string by: ")
+try:
+	rotate = int(input("Enter number to rotate string by: "))
 
-# Converts the number if it's greater than the string length to the equivalent under the length
-# eg. with a string length of 5, rotating by 7 is the same as rotating by 2; 7 mod 5 = 2
-r = rotate % len(string)	
+	# Converts the number if it's greater than the string length to the equivalent under the length
+	# eg. with a string length of 5, rotating by 7 is the same as rotating by 2; 7 mod 5 = 2
+	r = rotate % len(string)	
 
-s1 = string[-rotate:]
-s2 = string[:-rotate]
+	s1 = string[-r:]
+	s2 = string[:-r]
 
-print(s1 + "\n" + s2)
+	print(s1 + "\n" + s2)
 
-print("Rotated by " + str(rotate) + ": " + s1 + s2)
+	print("Rotated by " + str(rotate) + ": " + s1 + s2)
+except:
+	print("Not a valid number")
