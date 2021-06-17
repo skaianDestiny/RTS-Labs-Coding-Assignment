@@ -1,0 +1,9 @@
+3 If you could change 1 thing about your favorite framework/language/platform (pick one), what would it be?
+
+If I could change one thing about Java, I would make it so that primitives and arrays share more syntax and functions with objects.
+The current way they are implemented means that, when creating a generic framework, you need to treat them special compared to any object classes.
+For example, you must create two different functions if you want to compare an object to an int variable or a generic object variable.
+The fact that Java has to have wrapper classes for primitives (such as the Integer class) in order to perform functions on them
+makes it harder for beginner coders to understand what they are able to do with a variable. The disconnect between objects and primitives
+can be highlighted with the way many new coders have issues with understanding how to compare two String objects (where a .equals() method is required)
+as opposed to the simpler primitives which simply necessitate a "==" symbol.
